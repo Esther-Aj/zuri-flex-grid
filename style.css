@@ -1,0 +1,141 @@
+
+body{
+    margin: 0;
+    padding:0;
+    background-color: hsl(0, 0%, 95%);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:90vh;
+   
+}
+
+.row{
+    display: flex;
+    width:70%;
+    border-radius: 20%;
+    flex-wrap: nowrap;
+   
+    
+}
+.row div{
+    padding:62px;
+    color:white;
+    font-family: Lexend Deca;
+    font-weight: 400;
+   
+   
+
+}
+h3{
+    font-size: 40px;
+    font-family: big shoulders display;
+    color: hsl(0, 0%, 95%);
+}
+.heading{
+    color:hsl(179, 100%, 13%);
+}
+p{
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 70px;
+}
+.left-column{
+    background-color:hsl(31, 77%, 52%) ;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+   
+}
+.left-column a{
+    color:hsl(31, 77%, 52%);
+}
+.middle-column{
+background-color:hsl(184, 100%, 22%) ;
+}
+.middle-column a{
+    color:hsl(184, 100%, 22%);
+}
+.right-column{
+  background-color:  hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.right-column a{
+    color:hsl(179, 100%, 13%);
+}
+a{
+    
+    padding:12px 25px;
+    font-size: 15px;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+}
+.header-link{
+    padding:0;
+    font-size: 40px;
+    color:hsl(31, 77%, 52%);
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.header-link:hover{
+    color:hsl(179, 100%, 13%);
+}
+.left-column a:hover, .middle-column a:hover, .right-column a:hover{
+   
+    color: white;
+    border:2px solid hsl(0, 0%, 95%);
+    transition:0.3s ease;
+}
+.left-column a:hover{
+    background-color: hsl(31, 77%, 52%);
+}
+.middle-column a:hover{
+    background-color: hsl(184, 100%, 22%);
+}
+.right-column a:hover{
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+
+@media screen  and (max-width:1200px) {
+    .row{
+        width:85%;
+    }
+     .row div{
+       padding-left:30px;
+       padding-right:30px;
+      }
+}
+@media screen  and (max-width:760px) {
+  .row{
+    flex-wrap: wrap;
+    width:85%;
+  }
+  main{
+    height:100%;
+  }
+  .row div{
+    padding-left:50px;
+    padding-right:50px;
+   }
+   .left-column{
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+   }
+   .right-column{
+    border-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+   }
+}
